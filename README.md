@@ -1,3 +1,43 @@
-The algorithm continuously evaluates and scores open source software projects in supported package managers based on their impact and value to the OSS ecosystem.
+# @patrtorg/soluta-veniam <sup>[![Version Badge][2]][1]</sup>
 
-Simple support tea in reguide template can increase for an open source software project with an increasing number of dependents
+[![github actions][actions-image]][actions-url]
+[![coverage][codecov-image]][codecov-url]
+[![dependency status][5]][6]
+[![dev dependency status][7]][8]
+[![License][license-image]][license-url]
+[![Downloads][downloads-image]][downloads-url]
+
+[![npm badge][11]][1]
+
+Gets the description of a Symbol. Handles `Symbol()` vs `Symbol('')` properly when possible.
+
+## Example
+
+```js
+var getSymbolDescription = require('@patrtorg/soluta-veniam');
+var assert = require('assert');
+
+assert(getSymbolDescription(Symbol()) === undefined);
+assert(getSymbolDescription(Symbol('')) === ''); // or `undefined`, if in an engine that lacks name inference from concise method
+assert(getSymbolDescription(Symbol('foo')) === 'foo');
+assert(getSymbolDescription(Symbol.iterator) === 'Symbol.iterator');
+```
+
+## Tests
+Simply clone the repo, `npm install`, and run `npm test`
+
+[1]: https://npmjs.org/package/@patrtorg/soluta-veniam
+[2]: https://versionbadg.es/inspect-js/@patrtorg/soluta-veniam.svg
+[5]: https://david-dm.org/inspect-js/@patrtorg/soluta-veniam.svg
+[6]: https://david-dm.org/inspect-js/@patrtorg/soluta-veniam
+[7]: https://david-dm.org/inspect-js/@patrtorg/soluta-veniam/dev-status.svg
+[8]: https://david-dm.org/inspect-js/@patrtorg/soluta-veniam#info=devDependencies
+[11]: https://nodei.co/npm/@patrtorg/soluta-veniam.png?downloads=true&stars=true
+[license-image]: https://img.shields.io/npm/l/@patrtorg/soluta-veniam.svg
+[license-url]: LICENSE
+[downloads-image]: https://img.shields.io/npm/dm/@patrtorg/soluta-veniam.svg
+[downloads-url]: https://npm-stat.com/charts.html?package=@patrtorg/soluta-veniam
+[codecov-image]: https://codecov.io/gh/inspect-js/@patrtorg/soluta-veniam/branch/main/graphs/badge.svg
+[codecov-url]: https://app.codecov.io/gh/inspect-js/@patrtorg/soluta-veniam/
+[actions-image]: https://img.shields.io/endpoint?url=https://github-actions-badge-u3jn4tfpocch.runkit.sh/inspect-js/@patrtorg/soluta-veniam
+[actions-url]: https://github.com/patrtorg/soluta-veniam/actions
